@@ -1,6 +1,6 @@
-# Modern Full-Stack React Projects / Chapter 3
+# Modern Full-Stack React Projects / Chapter 4 / Backend
 
-_Implementing a Backend Using Express, Mongoose ODM and Jest_
+_Integrating a Frontend Using React and TanStack Query_
 
 ## Requirements
 
@@ -17,10 +17,9 @@ The versions listed above are the ones used in the book. While installing a newe
 
 ## Install
 
-If you cloned the full repository for the book, Husky may not find the `.git` directory when running `npm install`. In that case, just run `git init` in the root of the corresponding chapter folder.
+To install the dependencies, run:
 
 ```bash
-git init
 npm install
 ```
 
@@ -28,13 +27,7 @@ npm install
 
 First, make sure that the `mongo` Docker container is running.
 
-To run the example backend script, directly execute it with node:
-
-```bash
-node src/example.js
-```
-
-To run the main backend developed in this chapter in dev mode, run the following command:
+To run the backend in dev mode, run the following command:
 
 ```bash
 npm run dev
