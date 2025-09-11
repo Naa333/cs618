@@ -14,14 +14,17 @@ jobs:
     strategy:
       matrix:
         node-version: [16.x, 18.x, 20.x]
+    defaults:
+      run:
+        working-directory: ./assignment3
     steps:
       - uses: actions/checkout@v3
-      
+
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v3
         with:
           node-version: ${{ matrix.node-version }}
-          cache: 'npm'
+          cache: "npm"
 
       - name: Install dependencies
         run: npm install

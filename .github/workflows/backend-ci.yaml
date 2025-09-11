@@ -16,7 +16,7 @@ jobs:
         node-version: [16.x, 18.x, 20.x]
     defaults:
       run:
-        working-directory: ./backend
+        working-directory: ./assignment3/backend
 
     steps:
       - uses: actions/checkout@v3
@@ -35,3 +35,4 @@ jobs:
 
       - name: Run backend tests
         run: npm test
+
