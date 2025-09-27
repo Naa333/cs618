@@ -16,7 +16,7 @@ jobs:
         node-version: [16.x, 18.x, 20.x]
     defaults:
       run:
-        working-directory: ./assignment3/backend
+        working-directory: ./assignment3b/backend
 
     steps:
       - uses: actions/checkout@v3

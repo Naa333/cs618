@@ -28,8 +28,8 @@ jobs:
       - name: Build and push backend image
         uses: docker/build-push-action@v4
         with:
-          context: ./assignment3/backend
-          file: ./assignment3/backend/Dockerfile
+          context: ./assignment3b/backend
+          file: ./assignment3b/backend/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/blog-backend:latest
 
@@ -44,8 +44,8 @@ jobs:
       - name: Build and push frontend image
         uses: docker/build-push-action@v4
         with:
-          context: ./assignment3
-          file: ./assignment3/Dockerfile
+          context: ./assignment3b
+          file: ./assignment3b/Dockerfile
           push: true
           tags: ${{ secrets.DOCKERHUB_USERNAME }}/blog-frontend:latest
           build-args: VITE_BACKEND_URL=${{ steps.deploy-backend.outputs.url }}/api/v1
