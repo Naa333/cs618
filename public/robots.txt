@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://musical-memory-456j74j5qwpcqr9x-5173.app.github.dev/sitemap.xml
